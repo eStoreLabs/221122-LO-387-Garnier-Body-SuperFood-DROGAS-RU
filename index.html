@@ -722,7 +722,70 @@
   #es-garnier.es-garnier .es-footer {
     width: 100%;
     margin: 0;
+    color: white;
   }
+
+  #es-garnier.es-garnier .es-footer .es-footer__wrapper {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#30663f),
+      color-stop(#167535),
+      to(#30663f)
+    );
+    background: linear-gradient(to right, #30663f, #167535, #30663f);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 19px 16px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
+   gap: 2rem;
+}
+
+#es-garnier.es-garnier .es-footer .es-footer__wrapper div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px;
+  text-align: center;
+  justify-content: center;
+}
+
+#es-garnier.es-garnier .es-footer .es-footer__wrapper div p {
+  font-size: smaller;
+}
+
+#es-garnier.es-garnier .es-footer .es-footer__wrapper .es-footer_tiny-text {
+font-size: 10px;
+margin-top: 5px;
+}
+
+#es-garnier.es-garnier .es-footer .es-footer__wrapper div:last-child {
+  flex-direction: row;
+  align-items: flex-end;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#es-garnier.es-garnier .es-footer .es-footer__wrapper div p:last-child {
+  margin-left: 6px;
+}
+
+#es-garnier.es-garnier .es-footer .es-footer__wrapper div span {
+  font-size: 55px;
+  font-weight: 700;
+}
 
   #es-garnier.es-garnier .es-footer img {
     max-width: 100%;
@@ -1118,7 +1181,20 @@
 
     <div class="divContainer colNoMargin">
       <div class="es-footer">
-        <img src="./img/footer.png" alt="" />
+        <!-- <img src="./img/footer.png" alt="" /> -->
+        <div class="es-footer__wrapper">
+          <div>
+            <img src="./img/footer-1.png" alt="Logo of Cruelty Free International"/>
+          </div>
+          <div>
+            <img src="./img/footer-2.png" alt="Vegan formula logo"/>
+            <p class="es-footer_tiny-text">Не содержит ингредиентов животного происхождения</p>
+          </div>
+          <div>
+            <p><span>96%</span></p>
+            <p>ингредиенты природного происхождения</p>
+          </div>
+        </div>
       </div>
     </div>
 
